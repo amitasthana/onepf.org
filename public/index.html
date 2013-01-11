@@ -5,8 +5,10 @@
 <head>
   <title>One Platform Foundation</title>
   <style>
-    body, p, li, h1, h2, h3 {font-family: Helvetica, arial, freesans, clean, sans-serif}
+    body, p, li, h1, h2, h3, h4 {font-family: Helvetica, arial, freesans, clean, sans-serif}
     h1 {font-size: 28px; color: black;}
+    p {font-size: 14px; line-height: 1.6;}
+    h4.question {margin-bottom: 0px}
   </style>
 </head>
 <body>
@@ -57,38 +59,39 @@ Our first project is AppDF (Application Description File) - a format for describ
 </p>
 
 <h3>How Can I Help?</h3>
+<p>
 <ol>
 <li>Join <a href="http://groups.google.com/group/appdf">our mailing list</a>
 </li>
 <li>Choose an open task from <a href="https://github.com/onepf/AppDF/issues?labels=open+tasks&amp;page=1&amp;state=open">the task list</a> or propose a new one</li>
 <li>Email the group that you want to work on this task and let's discuss how to do it in the best way</li>
 </ol>
+</p>
 
 <h3>Frequently Asked Questions</h3>
 
-<h4>But will the Android applications stores support AppDF?</h4>
-<p>
+<h4 class="question">But will the Android applications stores support AppDF?</h4>
+<p class="answer">
   We have just started the project and already have commitment from three big appstores that they will support AppDF.
 </p>
 
-<h4>I represent an Android application store and we want to support AppDF, what should we do?</h4>
-<p>
+<h4 class="question">I represent an Android application store and we want to support AppDF, what should we do?</h4>
+<p class="answer">
   You can just take <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> and
   implement it in your store. But we suggest joining <a href="http://groups.google.com/group/appdf">our mailing list</a> and contacting us.
   We are developing reference AppDF parsers now that could make it easier for you to integrate AppDF support to your store.
 </p>
 
-<h4>What is source code licese?</h4>
-<p>
+<h4 class="question">What is source code licese?</h4>
+<p class="answer">
   All source code is available under Apache 2 license.
 </p>
 
-<h4>How can I create an AppDF file for my Android app?</h4>
-<p>
+<h4 class="question">How can I create an AppDF file for my Android app?</h4>
+<p class="answer">
   Right now you need to do it manually. We are working on a webpage where you can submit information about your app and
   it will generate an AppDF file for you.
 </p>
 
-<h4></h4>
 </body>
 </html>
