@@ -1,101 +1,137 @@
-<!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
-<!--Copyright: Vassili Philippov vassiliphilippov@onepf.org-->
-<!--Copyright: Yandex yandex.com-->
-<html>
-<head>
-  <title>One Platform Foundation</title>
-  <style>
-    body, p, li, h1, h2, h3, h4 {font-family: Helvetica, arial, freesans, clean, sans-serif}
-    h1 {font-size: 28px; color: black;}
-    h2 {margin-bottom: 10px; margin-top: 30px;}
-    h3 {margin-bottom: 0px; padding-bottom: 0px; margin-top: 20px;}
-    p, li {font-size: 16px; line-height: 1.6;}
-    h4.question {margin-bottom: 0px}
-    p.answer {margin-top: 3px}
-    body {padding: 20px;}
-  </style>
-</head>
-<body>
+  <!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
+  <!--Copyright: Vassili Philippov vassiliphilippov@onepf.org-->
+  <!--Copyright: Yandex yandex.com-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>One Platform Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      body {padding-top: 60px; }
+      p.answer { padding-bottom: 15px}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 
-<h1>One Platform Foundation</h1>
-<p>
-We want to make it easier for Android developers to submit their applications to several application stores. 
-Our first project is AppDF (Application Description File) - a format for describing Android application in one file.  
-</p>
+     <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">One Platform Foundation</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#AppDF">AppDF</a></li>
+                <li><a href="#specification">Specification</a></li>
+                <li><a href="#help">How Can I Help?</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
 
-<h2>AppDF</h2>
-<p>
-  Uploading Android application to several appstores could be time consuming.
-  
-  AppDF format is designed to simplify this process. You describe your Android application once, create a 
-  simple AppDF archive that includes the XML description, APK file(s), screenshots, app icon, promo images, etc 
-  and just upload this AppDF file to all the stores that support AppDF uploading.
-</p>
 
-<h3>What Is AppDF File?</h3>
-<p>
-  AppDF file is a ZIP archive with .appdf extension. This archive must contain description.xml file with 
-  application description (title, description text, screenshots, etc.). This description.xml file contains 
-  links to the other files in the archive like APK file(s), screenshots, promo graphics, video, etc. The main sections
-  of the description.xml file are:
-  <ul>
-    <li>Category information</li>
-    <li>Text description (title, short description, full description, keywords, etc)</li>
-    <li>Images (app icon, screenshots, promo images)</li>
-    <li>Videos</li>
-    <li>Contant rating information</li>
-    <li>Availability (country list, etc)</li>
-    <li>Prices</li>
-    <li>Requirements (you can specify supported devices if different from the APK file manifest)</li>
-    <li>Testing instructions</li>
-    <li>Consent</li>
-    <li>Customer-support information</li>
-    <li>Store specific section</li>
-  </ul>
-</p>
+  <div class="container">
 
-<h3>Specification</h3>
-<p>
-  You can find <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> at GitHub. 
-  There is also a formal <a href="https://github.com/onepf/AppDF/blob/master/specification/appdf-description.xsd">XMS Scheme (XSD) description</a> 
-  of the used XML format.
-  The current version is 0.92 and we plan to freeze the specification before the end of February.
-</p>
+<div class="hero-unit">
+  <h1>One Platform Foundation</h1>
+  <p>
+  We want to make it easier for Android developers to submit their applications to several application stores.
+  Our first project is <abbr title="Application Description File">AppDF</abbr> (Application Description File) - a format for describing Android application in one file.
+  </p>
+  <p>
+    <a href="https://github.com/onepf" class="btn btn-primary btn-large">View Projects on GitHub</a>
+  </p>
+</div>
 
-<h3>How Can I Help?</h3>
-<p>
-<ol>
-<li>Join <a href="http://groups.google.com/group/appdf">our mailing list</a>
-</li>
-<li>Choose an open task from <a href="https://github.com/onepf/AppDF/issues?labels=open+tasks&amp;page=1&amp;state=open">the task list</a> or propose a new one</li>
-<li>Email the group that you want to work on this task and let's discuss how to do it in the best way</li>
-</ol>
-</p>
+  <h2 id="AppDF">AppDF</h2>
+  <p>
+    Uploading Android application to several appstores could be time consuming.
 
-<h3>Frequently Asked Questions</h3>
+    AppDF format is designed to simplify this process. You describe your Android application once, create a
+    simple AppDF archive that includes the XML description, APK file(s), screenshots, app icon, promo images, etc
+    and just upload this AppDF file to all the stores that support AppDF uploading.
+  </p>
 
-<h4 class="question">But will the Android applications stores support AppDF?</h4>
-<p class="answer">
-  We have just started the project and already have commitment from three big appstores that they will support AppDF.
-</p>
+  <h3>What Is AppDF File?</h3>
+  <p>
+    AppDF file is a ZIP archive with .appdf extension. This archive must contain description.xml file with
+    application description (title, description text, screenshots, etc.). This description.xml file contains
+    links to the other files in the archive like APK file(s), screenshots, promo graphics, video, etc. The main sections
+    of the description.xml file are:
+    <ul>
+      <li>Category information</li>
+      <li>Text description (title, short description, full description, keywords, etc)</li>
+      <li>Images (app icon, screenshots, promo images)</li>
+      <li>Videos</li>
+      <li>Contant rating information</li>
+      <li>Availability (country list, etc)</li>
+      <li>Prices</li>
+      <li>Requirements (you can specify supported devices if different from the APK file manifest)</li>
+      <li>Testing instructions</li>
+      <li>Consent</li>
+      <li>Customer-support information</li>
+      <li>Store specific section</li>
+    </ul>
+  </p>
 
-<h4 class="question">I represent an Android application store and we want to support AppDF, what should we do?</h4>
-<p class="answer">
-  You can just take <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> and
-  implement it in your store. But we suggest joining <a href="http://groups.google.com/group/appdf">our mailing list</a> and contacting us.
-  We are developing reference AppDF parsers now that could make it easier for you to integrate AppDF support to your store.
-</p>
+  <h3 id="specification">Specification</h3>
+  <p>
+    You can find <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> at GitHub.
+    There is also a formal <a href="https://github.com/onepf/AppDF/blob/master/specification/appdf-description.xsd">XMS Scheme (XSD) description</a>
+    of the used XML format.
+    The current version is 0.92 and we plan to freeze the specification before the end of February.
+  </p>
 
-<h4 class="question">What is source code licese?</h4>
-<p class="answer">
-  All source code is available under Apache 2 license.
-</p>
+  <h3 id="help">How Can I Help?</h3>
+  <p>
+  <ol>
+  <li>Join <a href="https://groups.google.com/group/appdf">our mailing list</a>.
+  </li>
+  <li>Choose an open task from <a href="https://github.com/onepf/AppDF/issues?labels=open+tasks&amp;page=1&amp;state=open">the task list</a> or propose a new one.</li>
+  <li>Email the group that you want to work on this task and let's discuss how to do it in the best way.</li>
+  </ol>
+  </p>
 
-<h4 class="question">How can I create an AppDF file for my Android app?</h4>
-<p class="answer">
-  Right now you need to do it manually. We are working on a webpage where you can submit information about your app and
-  it will generate an AppDF file for you.
-</p>
+  <h3 id="FAQ">Frequently Asked Questions</h3>
 
-</body>
-</html>
+  <h4>But will the Android applications stores support AppDF?</h4>
+  <p class="answer">
+    We have just started the project and already have commitment from three big appstores that they will support AppDF.
+  </p>
+
+  <h4>I represent an Android application store and we want to support AppDF, what should we do?</h4>
+  <p class="answer">
+    You can just take <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> and
+    implement it in your store. But we suggest joining <a href="https://groups.google.com/group/appdf">our mailing list</a> and contacting us.
+    We are developing reference AppDF parsers now that could make it easier for you to integrate AppDF support to your store.
+  </p>
+
+  <h4>What is source code licese?</h4>
+  <p class="answer">
+    All source code is available under Apache 2 license.
+  </p>
+
+  <h4>How can I create an AppDF file for my Android app?</h4>
+  <p class="answer">
+    Right now you need to do it manually. We are working on a webpage where you can submit information about your app and
+    it will generate an AppDF file for you.
+  </p>
+
+  </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
