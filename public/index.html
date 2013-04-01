@@ -1,6 +1,7 @@
-  <!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
-  <!--Copyright: Vassili Philippov vassiliphilippov@onepf.org-->
-  <!--Copyright: Yandex yandex.com-->
+<!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
+<!--Copyright: One Platform Foundation wwww.onepf.org-->
+<!--Copyright: Vassili Philippov vassiliphilippov@onepf.org-->
+<!--Copyright: Yandex www.yandex.com-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,118 +19,86 @@
     <![endif]-->
   </head>
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand active" href="/">One Platform Foundation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/appdf">AppDF</a></li>
+              <li><a href="/OpenIAB">OpenIAB</a></li>
+              <li><a href="/contribute/">How to Contribute</a></li>
+              <li><a href="/follow/">Follow Us</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">One Platform Foundation</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#AppDF">AppDF</a></li>
-                <li><a href="#specification">Specification</a></li>
-                <li><a href="#help">How Can I Help?</a></li>
-                <li><a href="#FAQ">FAQ</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1>One Platform Foundation</h1>
+        <p>
+        We want to make it easier for Android developers to submit their applications to several application stores.
+        Our first project is <a href="/appdf/">AppDF</a> (Application Description File) - a format for describing Android application in one file.
+        The second project <a href="/openiab/">OpenIAB</a> - a library that allows supporting in-app billing of multiple appstores with single code.
+        </p>
+        <p>
+          <a href="https://github.com/onepf" class="btn btn-primary btn-large">View Projects on GitHub</a>
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="span6">
+          <section id="appdf">
+            <legend>AppDF</legend>
+            <p>
+              Uploading Android application to several appstores could be time consuming. AppDF format is designed to 
+              simplify this process. You describe your Android application once, create a simple AppDF archive that includes the XML description, APK file(s), screenshots, app icon, promo images, etc and just upload this AppDF file to all the stores that support AppDF uploading.
+            </p>
+            <ul>
+              <li><a href="/appdf/">Read more about AppDF</a></li>
+              <li><a href="/editor/">AppDF Editor</a> - create an AppDF file easily</li>
+              <li><a href="/appdf/specification/">AppDF Specification</a></li>
+              <li><a href="/contribute/">How can I help?</a></li>
+              <li><a href="https://groups.google.com/group/appdf">Join AppDF mailing list</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="span6">
+          <section id="openiab">
+            <legend>OpenIAB</legend>
+            <p>
+              There are several different In-App Purchase SDKs already and this number is increasing. 
+              We are creating an open source library that will wrap appstore in-app purchase APIs of all the stores and 
+              provide an easy way for Android developers to develop their apps/games in a way that one APK will work in all the
+              stores and will automatically use right in-app purchase API under each store.
+              Plus we are developing an open in-app billing API that stores could implement to support all the APK files built using this library.
+            </p>
+            <ul>
+              <li>OpenIAB library is not ready for your app development yet</li>
+              <li><a href="http://www.github.com/onepf/OpenIAB/">OpenIAB on GitHub</a></li>
+              <li><a href="/contribute/#joinopeniab">Get involved in OpenIAB development</a></li>
+              <li><a href="http://groups.google.com/group/opf_openiab">Join OpenIAB mailing list</a></li>
+            </ul>
+          </section>
         </div>
       </div>
 
+      <hr>
 
-  <div class="container">
+      <footer>
+        <p>&copy; <a href="http://www.onepf.org">One Platform Foundation</a> 2012</p>
+      </footer>
 
-<div class="hero-unit">
-  <h1>One Platform Foundation</h1>
-  <p>
-  We want to make it easier for Android developers to submit their applications to several application stores.
-  Our first project is <abbr title="Application Description File">AppDF</abbr> (Application Description File) - a format for describing Android application in one file.
-  </p>
-  <p>
-    <a href="https://github.com/onepf" class="btn btn-primary btn-large">View Projects on GitHub</a>
-  </p>
-</div>
-
-  <h2 id="AppDF">AppDF</h2>
-  <p>
-    Uploading Android application to several appstores could be time consuming.
-
-    AppDF format is designed to simplify this process. You describe your Android application once, create a
-    simple AppDF archive that includes the XML description, APK file(s), screenshots, app icon, promo images, etc
-    and just upload this AppDF file to all the stores that support AppDF uploading.
-  </p>
-
-  <h3>What Is AppDF File?</h3>
-  <p>
-    AppDF file is a ZIP archive with <code>.appdf</code> extension. This archive must contain <code>description.xml</code> file with
-    application description (title, description text, screenshots, etc.). This <code>description.xml</code> file contains
-    links to the other files in the archive like APK file(s), screenshots, promo graphics, video, etc. The main sections
-    of the description.xml file are:
-    <ul>
-      <li>Category information</li>
-      <li>Text description (title, short description, full description, keywords, etc)</li>
-      <li>Images (app icon, screenshots, promo images)</li>
-      <li>Videos</li>
-      <li>Contant rating information</li>
-      <li>Availability (country list, etc)</li>
-      <li>Prices</li>
-      <li>Requirements (you can specify supported devices if different from the APK file manifest)</li>
-      <li>Testing instructions</li>
-      <li>Consent</li>
-      <li>Customer-support information</li>
-      <li>Store specific section</li>
-    </ul>
-  </p>
-
-  <h3 id="specification">Specification</h3>
-  <p>
-    You can find <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> at GitHub.
-    There is also a formal <a href="https://github.com/onepf/AppDF/blob/master/specification/appdf-description.xsd">XMS Scheme (XSD) description</a>
-    of the used XML format.
-    The current version is 0.92 and we plan to freeze the specification before the end of February.
-  </p>
-
-  <h3 id="help">How Can I Help?</h3>
-  <p>
-  <ol>
-  <li>Join <a href="https://groups.google.com/group/appdf">our mailing list</a>.
-  </li>
-  <li>Choose an open task from <a href="https://github.com/onepf/AppDF/issues?labels=open+tasks&amp;page=1&amp;state=open">the task list</a> or propose a new one.</li>
-  <li>Email the group that you want to work on this task and let's discuss how to do it in the best way.</li>
-  </ol>
-  </p>
-
-  <h3 id="FAQ">Frequently Asked Questions</h3>
-
-  <h4>But will the Android applications stores support AppDF?</h4>
-  <p class="answer">
-    We have just started the project and already have commitment from three big appstores that they will support AppDF.
-  </p>
-
-  <h4>I represent an Android application store and we want to support AppDF, what should we do?</h4>
-  <p class="answer">
-    You can just take <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">current specification draft</a> and
-    implement it in your store. But we suggest joining <a href="https://groups.google.com/group/appdf">our mailing list</a> and contacting us.
-    We are developing reference AppDF parsers now that could make it easier for you to integrate AppDF support to your store.
-  </p>
-
-  <h4>What is source code licese?</h4>
-  <p class="answer">
-    All source code is available under Apache 2 license.
-  </p>
-
-  <h4>How can I create an AppDF file for my Android app?</h4>
-  <p class="answer">
-    Right now you need to do it manually. We are working on a webpage where you can submit information about your app and
-    it will generate an AppDF file for you.
-  </p>
-
-  </div>
+    </div><!--div.container-->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>

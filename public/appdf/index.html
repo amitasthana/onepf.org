@@ -1,0 +1,138 @@
+<!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
+<!--Copyright: One Platform Foundation wwww.onepf.org-->
+<!--Copyright: Vassili Philippov vassiliphilippov@onepf.org-->
+<!--Copyright: Yandex www.yandex.com-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AppDF -  One Platform Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+      body {padding-top: 60px; }
+      p.answer { padding-bottom: 15px}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">One Platform Foundation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/appdf">AppDF</a></li>
+              <li><a href="/OpenIAB">OpenIAB</a></li>
+              <li><a href="/contribute/">How to Contribute</a></li>
+              <li><a href="/follow/">Follow Us</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1>AppDF</h1>
+        <p>
+          Uploading Android application to several appstores could be time consuming. AppDF format is designed to simplify this process. You describe your Android application once, create a simple AppDF file that includes description, APK file(s), screenshots, app icon, promo images, etc and just upload this AppDF file to all the stores that support AppDF uploading.
+        </p>
+        <p>
+          <a href="/editor/" class="btn btn-primary btn-large">AppDF Editor</a>
+          <a href="https://github.com/onepf/AppDF" class="btn btn-primary btn-large">View AppDF on GitHub</a>
+        </p>
+      </div>
+
+      <section id="whatisappdf">
+        <legend>What Is AppDF</legend>
+        <p>
+          AppDF file is a ZIP archive with <code>.appdf</code> extension. This archive must contain <code>description.xml</code> file with
+          application description (title, description text, category, price, requirements, etc.). This <code>description.xml</code> file contains
+          links to the other files in the archive like APK file(s), screenshots, promo graphics, video, etc. The main sections
+          of the description.xml file are:
+          <ul>
+            <li>Category information</li>
+            <li>Text description (title, short description, full description, keywords, etc)</li>
+            <li>Images (app icon, screenshots, promo images)</li>
+            <li>Videos</li>
+            <li>Content rating information</li>
+            <li>Availability (country list, etc)</li>
+            <li>Price</li>
+            <li>Requirements (you can specify supported devices if different from the APK file manifest)</li>
+            <li>Testing instructions</li>
+            <li>Consent</li>
+            <li>Customer-support information</li>
+            <li>Store specific section</li>
+          </ul>
+        </p>
+      </section>      
+
+      <section id="howitworks">
+        <legend>How AppDF Works</legend>
+        <p>
+          There are more than <a href="https://github.com/onepf/AppDF/wiki/Android-Application-Stores">15 alternative Android appstores</a>. All of them have their own audience. By submitting your application to Google Play only 
+          you loose many millions of potential addressable users. But submitting an app to all the appstores could take you several days, and then you need to upload each update to all the stores as well. AppDF allows you to submit your application as easy as uploading one file. You simply create an AppDF file using HTML5 AppDF Editor and submit the generated AppDF file to all the appstores. 
+        </p>
+        <p>[Diagram here]</p>
+        <ol>
+          <li>Create AppDF file for your application either using <a href="../editor/">AppDF Editor</a> or just follow <a href="specification/">the specification</a> to create an AppDF file manually</li>
+          <li>Submit your AppDF file to the supporting appstores</li>
+        </ol>
+      </section>      
+
+      <section id="nomiddleman">
+        <legend>No Middle Man</legend>
+        <p>
+          AppDF is an open file format. It is not an agregator. There is no middle man in the process. The app developers work directly with the appstores as before.
+          There is just a common file format that makes it easier.
+        </p>
+      </section>    
+
+      <section id="appstores">
+        <legend>Appstores</legend>
+        <p>
+          We have just started the AppDF project. The following Android application stores already support AppDF format:
+          <ul>
+            <li><a href="http://apps.opera.com/">Opera Mobile Store</a></li>
+            <li><a href="http://store.yandex.com/">Yandex.Store</a></li>
+          </ul>
+        </p>
+        <p>
+          The following Android application stores commited to support AppDF but not ready with their implementation yet:
+          <ul>
+            <li><a href="http://www.aptoide.com/">Aptoid</a></li>
+            <li><a href="http://www.slideme.org/">SlideME</a></li>
+          </ul>
+        </p>
+      </section>    
+
+      <section id="specification">
+        <legend>Specification</legend>
+        <p>
+          <a href="https://github.com/onepf/AppDF/blob/master/specification/appds_spec_1_0.md">AppDF Specification 1.0</a>.
+          Date: April 8th, 2013
+        </p>
+      </section>    
+  
+      <hr>
+
+      <footer>
+        <p>&copy; <a href="http://www.onepf.org">One Platform Foundation</a> 2012</p>
+      </footer>
+
+    </div><!--div.container-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+  </html>
