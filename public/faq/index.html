@@ -52,22 +52,28 @@
         <legend>AppDF - Application Description File</legend>
         <h4 class="question">What is current project status?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          <ul>
+          <li>Current version of <a href="/appdf/specification/">AppDF specification</a> is 1.0.</li>
+          <li>Two appstores <a href="http://apps.opera.com/">Opera Mobile Store</a> and <a href="http://store.yandex.com/">Yandex.Store</a> have AppDF publishing support in beta stage.</li>
+          <li>Several more appstores commited to support AppDF and are working on implementation now.</li>
+          <li><a href="/editor/">AppDF Editor</a> is ready.</li>
+          <li>Command line tool for submitting AppDF to appstores is in beta.</li>
+          </ul>
         </p>
 
         <h4 class="question">Where can I submit AppDF files?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          Currently you can submit them to <a href="http://apps.opera.com/">Opera Mobile Store</a> and <a href="http://store.yandex.com/">Yandex.Store</a>. Both have AppDF format support on their developer portals. Several more appstores are working on AppDF implementation.
         </p>
 
         <h4 class="question">How can I create AppDF file?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          You can either follow <a href="/appdf/specification/">AppDF specification</a> or use <a href="/editor/">AppDF Editor</a>.
         </p>
 
         <h4 class="question">Can I do one appdf for all stores, including Google Play?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          Yes, you can. When we created AppDF specification we carefully checked all the existing Android appstores to make sure AppDF format includes all needed information. AppDF also supports store specific sections so you can add custom information for any particular appstore.
         </p>
 
         <h4 class="question">How can you match categories from different appstores?</h4>
@@ -77,12 +83,12 @@
 
         <h4 class="question">What is difference between AppDF and mobile app agregators?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          AppDF is a format that lets developers upload single distribution file to multiple appstores directly. In other words there is no middle man in AppDF approach, app developers publish their apps directly to the appstores not to some agregator.
         </p>
 
         <h4 class="question">Which Android appstores support AppDF format?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          Currently Yandex.Store and Opera Mobile Store support AppDF.
         </p>
 
         <h4 class="question">I am an Android apstore, how can I support AppDF format?</h4>
@@ -97,7 +103,7 @@
 
         <h4 class="question">How can I describe In-App Purchases in AppDF?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          Right now AppDF does not support in-app purchases. It is not done yet because right now it is very difficult to create one APK file that will support in-app billing API of different appstores. We plan to support in-app purchases in the next version of AppDF which will be aligned with <a href="/openiab/">OpenIAB</a> library that allows creating APK file that supports in-app billing of all the existing appstores.
         </p>
 
         <h4 class="question">What should I do if I have a proposal for the next version of AppDF specification?</h4>
@@ -110,22 +116,23 @@
        <legend>OpenIAB - Open In-App Billing</legend>
         <h4 class="question">What is current project status?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          OpenIAB library is under development. We have finished a sample game that supports in-app billing of four different stores (Google Play, Amazon AppStore, Samsung Apps and SK T-Store) and now works on splitting in-app purchase code in a separate library. We will try to keep its interface as close to Google Play IAB API as possible. In the same time we have starting working on OpenIAB API that other stores could implement to support all the apps/games that use OpenIAB Lib. <a href="file://localhost/contribute/#joinopeniab">Join us</a> to develop OpenIAB together. 
         </p>
 
         <h4 class="question">Does OpenIAB support mobile operator billing?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          It is a wrong question. All payments are processes directly by each appstore. There is no a middle man staying between the app developers and the appstores. OpenIAB will not do payments for the appstores. It is just an API how the apps communicate with the appstores to request in-app billing and get response.
         </p>
 
         <h4 class="question">What is difference between OpenIAB Lib and OpenIAB API?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          OpenIAB Lib is a library that wraps in-app billing APIs of several appstores, you can integrate it once and your app will support in-app billing of all these stores. OpenIAB API is yet another in-app billing API that appstores can implement. OpenIAB API is integrated in OpenIAB Lib as one of the supported APIs. By implementing OpenIAB API the appstores will get automatic support of all the apps that use OpenIAB Lib.
         </p>
 
         <h4 class="question">What is source code license?</h4>
         <p class="answer">
-          [Answer to be supplied soon.]
+          Source code of the OpenIAB library and the samples is available under the terms of the Apache License, Version 2.0:<br>
+          <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
         </p>
       </section>
 
