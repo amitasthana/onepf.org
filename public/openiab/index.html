@@ -56,6 +56,23 @@
         </p>
       </div>
 
+      <section id="howitworks">
+        <legend>How OpenIAB Will Work</legend>
+        <ol>
+          <li>An Android app developer integrates OpenIAB library in his/her Android code</li>
+          <li>An Android app developer implements in-app purchases using OpenIAB API (which is very close to Google Play IAB API, just few changes in source code will be needed)</li>
+          <li>OpenIAB Lib detects which appstore installed the app</li>
+          <li>OpenIAB Lib redirects in-app purchase calls to the corresponding appstore IAB SDK (OpenIAB Lib wrapps IAB SDKs of severall apstores)</li>
+          <li>All In-App Billing logic is handled by the corresponding appstore, OpenIAB has no code to process in-app purchases and has no UI, it just wrapps In-App Billing APIs of different stores in one library</li>
+        </ol>
+        <p>
+          <img src="../img/openiabdiagram1.png" width="600">
+        </p>
+        <p style="margin-top: 40px">
+          <img src="../img/openiabdiagram2.png" width="600">
+        </p>
+      </section>      
+
       <section id="status">
         <legend>Current Status</legend>
         <p>
@@ -100,6 +117,18 @@
           <li>If you are an appstore and do not support In-App Billing yet but plan to support it then we will be glad working with your on creating a common OpenIAB API and SDK. <a href="http://groups.google.com/group/opf_openiab">Join OpenIAB mailing list</a> to be involved in OpenIAB API development.</li>
         </ul>
       </section>      
+
+      <section id="license">
+        <legend>License</legend>
+        <p>
+          Source code of the OpenIAB library and the samples is available under the terms of the Apache License, Version 2.0:<br>
+          <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
+        </p>
+        <p>
+          The OpenIAB API specification and the related texts are available under the terms of the Creative Commons Attribution 2.5 license:<br>
+          <a href="http://creativecommons.org/licenses/by/2.5/">http://creativecommons.org/licenses/by/2.5/</a>
+        </p>
+      </section>    
 
       <hr>
 
