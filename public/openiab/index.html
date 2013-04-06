@@ -43,8 +43,8 @@
         <h1>OpenIAB - Open In-App Billing</h1>
         <p>
           Uploading Android apps to all the existing Android appstores is a painful process and AppDF project was designed to make it easier.
-          But what is even more difficult for the developers is supporting different in-purchase SDKs of different appstores. 
-          There are several different In-App Purchase SDKs already and this number is increasing. 
+          But what is even more difficult for the developers is supporting different in-purchase APIs of different appstores. 
+          There are five different In-App Purchase APIs already and this number is increasing. 
           We are going to create an open source library that will wrap appstore in-app purchase APIs of all the stores and 
           provide an easy way for the developers to develop their apps/games in a way that one APK will work in all the 
           stores and automatically use right in-app purchase API under each store. 
@@ -63,7 +63,7 @@
           <li>An Android app developer integrates OpenIAB library in his/her Android code</li>
           <li>An Android app developer implements in-app purchases using OpenIAB API (which is very close to Google Play IAB API, just few changes in source code will be needed)</li>
           <li>OpenIAB Lib detects which appstore installed the app</li>
-          <li>OpenIAB Lib redirects in-app purchase calls to the corresponding appstore IAB SDK (OpenIAB Lib wrapps IAB SDKs of severall apstores)</li>
+          <li>OpenIAB Lib redirects in-app purchase calls to the corresponding appstore IAB API (OpenIAB Lib wrapps IAB APIs of severall apstores)</li>
           <li>All In-App Billing logic is handled by the corresponding appstore, OpenIAB has no code to process in-app purchases and has no UI, it just wrapps In-App Billing APIs of different stores in one library</li>
         </ol>
         <p>
@@ -86,11 +86,11 @@
       <section id="nomiddleman">
         <legend>No Middle Man</legend>
         <p>
-          OpenIAB is an open source library that wraps the already existing IAB SDKs as well as an open API that appstores could implement.
+          OpenIAB is an open source library that wraps the already existing IAB APIs as well as an open API that appstores could implement.
           It is important to understand that all payments are processes directly by each store and there is no a middle man staying between the app developers
           and the appstores. OpenIAB will not do payments for the appstores. It is just an API 
-          how the apps communicate with appstores to request in-app billing. There is a common open API/SDK all the stores can use instead of each new store implement their own API/SDK and developers have
-          to integrate all these different SDKs in their apps.
+          how the apps communicate with appstores to request in-app billing. There is a common open API all the stores can use instead of each new store implement their own API and developers have
+          to integrate all these different APIs in their apps.
         </p>
       </section>    
   
@@ -106,7 +106,7 @@
           </ul>
         </p>
         <p>
-          We are working on integrating their IAB SDKs in one OpenIAB library.
+          We are working on integrating their IAB APIs in one OpenIAB library.
         </p>
       </section>    
   
@@ -114,8 +114,8 @@
         <legend>Get Involved</legend>
         <ul>
           <li>If you are an Android app developer check <a href="https://github.com/onepf/OpenIAB/issues?labels=open+tasks&state=open">the list of open tasks</a>, check if any of these tasks is interesting for you, send a message to <a href="http://groups.google.com/group/opf_openiab">OpenIAB mailing list</a> how you want to help. <a href="https://github.com/onepf/OpenIAB">Fork OpenIAB</a> on GitHub.</li>
-          <li>If you are an appstore and already support In-App Billing then most probably we are already working on supporting your SDK in OpenIAB library, and your help is very welcome since you know your SDK better than anyone else! Just contact us by <a href="http://groups.google.com/group/opf_openiab">joining OpenIAB mailing list</a>.</li>
-          <li>If you are an appstore and do not support In-App Billing yet but plan to support it then we will be glad working with your on creating a common OpenIAB API and SDK. <a href="http://groups.google.com/group/opf_openiab">Join OpenIAB mailing list</a> to be involved in OpenIAB API development.</li>
+          <li>If you are an appstore and already support In-App Billing then most probably we are already working on supporting your API in OpenIAB library, and your help is very welcome since you know your API better than anyone else! Just contact us by <a href="http://groups.google.com/group/opf_openiab">joining OpenIAB mailing list</a>.</li>
+          <li>If you are an appstore and do not support In-App Billing yet but plan to support it then we will be glad working with your on creating a common OpenIAB API and API. <a href="http://groups.google.com/group/opf_openiab">Join OpenIAB mailing list</a> to be involved in OpenIAB API development.</li>
         </ul>
       </section>      
 
@@ -141,5 +141,6 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20873500 = new Ya.Metrika({id:20873500, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20873500" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
   </body>
   </html>
