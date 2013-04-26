@@ -44,7 +44,7 @@
       <div class="hero-unit">
         <h1 class="page-header">AppDF - App Description File</h1>
         <p>
-          Uploading Android application to several appstores could be time consuming. AppDF format is designed to simplify this process. You describe your Android application once, create a simple AppDF file that includes description, APK file(s), screenshots, app icon, promo images, etc and just upload this AppDF file to all the stores that support AppDF uploading.
+          Uploading an Android application to several appstores can be time-consuming. The AppDF format is designed to simplify this process. You describe your Android application once, create a simple AppDF file that includes the description, APK file(s), screenshots, app icon, promo images, etc., then and just upload this AppDF file to all the stores that support AppDF uploading.
         </p>
         <p style="text-align: right;">
           <a href="/editor/" class="btn btn-primary btn-primary-onepf">AppDF Editor</a>
@@ -53,11 +53,11 @@
       </div>
 
       <section id="whatisappdf">
-        <legend>What Is AppDF</legend>
+        <legend>What Is AppDF?</legend>
         <p>
-          AppDF file is a ZIP archive with <code>.appdf</code> extension. This archive must contain <code>description.xml</code> file with
+          AppDF file is a ZIP archive with an <code>.appdf</code> extension. This archive must contain the <code>description.xml</code> file with
           application description (title, description text, category, price, requirements, etc.). This <code>description.xml</code> file contains
-          links to the other files in the archive like APK file(s), screenshots, promo graphics, video, etc. The main sections
+          links to the other files in the archive such as APK file(s), screenshots, promo graphics, video, etc. The main sections
           of the description.xml file are:
           <ul>
             <li>Category information</li>
@@ -70,7 +70,7 @@
             <li>Requirements (you can specify supported devices if different from the APK file manifest)</li>
             <li>Testing instructions</li>
             <li>Consent</li>
-            <li>Customer-support information</li>
+            <li>Customer support information</li>
             <li>Store specific section</li>
           </ul>
         </p>
@@ -79,14 +79,14 @@
       <section id="howitworks">
         <legend>How AppDF Works</legend>
         <p>
-          There are more than <a href="https://github.com/onepf/AppDF/wiki/Android-Application-Stores">15 alternative Android appstores</a>. All of them have their own audience. You loose many millions of potential addressable users by submitting your application to Google Play only.
-          But submitting an app to all the appstores could take you several days, and then you need to upload each update to all the stores as well. AppDF allows you to submit your application as easy as uploading one file. You simply create an AppDF file using HTML5 AppDF Editor and submit the generated AppDF file to all the appstores. 
+          There are more than <a href="https://github.com/onepf/AppDF/wiki/Android-Application-Stores">15 alternative Android appstores</a>. All of them have their own audience. You will lose many millions of potential addressable users by only submitting your application to Google Play.
+          But submitting an app to all the appstores could take you several days, and then you also need to upload each update to all the stores. AppDF makes submitting your application as easy as uploading one file.  You simply create an AppDF file using the HTML5 AppDF Editor and submit the generated AppDF file to all the appstores. 
         </p>
         <p>
           <img src="../img/appdfdiagram.png" width="600">
         </p>
         <ol>
-          <li>Create AppDF file for your application either using <a href="../editor/">AppDF Editor</a> or just follow <a href="/appdf/specification/">the specification</a> to create an AppDF file manually</li>
+          <li>Create an AppDF file for your application using the <a href="../editor/">AppDF Editor</a> or just follow <a href="/appdf/specification/">the specification</a> to create an AppDF file manually</li>
           <li>Submit your AppDF file to the supporting appstores</li>
         </ol>
       </section>      
@@ -95,21 +95,21 @@
         <legend>No Middle Man</legend>
         <p>
           AppDF is an open file format. It is not an aggregator. There is no middle man in the process. The app developers work directly with the appstores as before.
-          There is just a common file format that makes it easier.
+          The only difference is a common file format that makes the whole process easier.
         </p>
       </section>    
 
       <section id="appstores">
         <legend>Appstores</legend>
         <p>
-          We have just started the AppDF project. The following Android application stores already support AppDF format (you can go to their developer portals and submit AppDF files):
+          We have just started the AppDF project. The following Android application stores already support the AppDF format (i.e. you can go to their developer portals and submit AppDF files):
           <ul>
             <li><a href="http://apps.opera.com/">Opera Mobile Store</a></li>
             <li><a href="http://store.yandex.com/">Yandex.Store</a></li>
           </ul>
         </p>
         <p>
-          The following appstores are working on AppDF support but not ready with implementation yet:
+          The following appstores are working on AppDF support but are not yet ready with implementation yet:
           <ul>
             <li><a href="http://www.appland.se/">Appland</a></li>
             <li><a href="http://www.aptoide.com/">Aptoide</a></li>
@@ -131,7 +131,7 @@
         <ul>
           <li><a href="/appdf/samples/com.softspb.geo_game.appdf">SPB Geo Game</a> - a simple paid game</li>
           <li><a href="/appdf/samples/mxplayer.appdf">MX Player</a> - a free video player localized to three languages</li>
-          <li><a href="/appdf/samples/spbswedishcards.appdf">SPB Swedish Cards</a> - a paid application localized to many languages</li> 
+          <li><a href="/appdf/samples/spbswedishcards.appdf">SPB Swedish Cards</a> - a paid application localized to several languages</li> 
           <li><a href="/appdf/samples/yandex.shell.appdf">Yandex.Shell</a> - a free application limited to several countries</li>          
         </ul>
       </section>    
@@ -139,7 +139,7 @@
       <section id="license">
         <legend>License</legend>
         <p>
-          Source code of the AppDF Editor and the reference parser libs is available under the terms of the Apache License, Version 2.0:<br>
+          The source code of the AppDF Editor and the reference parser libs are available under the terms of the Apache License, Version 2.0:<br>
           <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
         </p>
         <p>
@@ -152,9 +152,9 @@
         <legend>What's Next</legend>
         <ul>
           <li>In-App Billing support in the next version of AppDF</li>
-          <li>Add a feature to the AppDF Editor to automatically download application description from Google Play</li>
+          <li>Add a feature to the AppDF Editor to automatically download an application description from Google Play</li>
           <li>Add "What's Next" section to the AppDF Editor that explains how the generated AppDF file could be submitted to appstores</li> 
-          <li>Add better documentation about AppDF parser reference source code</li>
+          <li>Add better documentation about the AppDF parser reference source code</li>
         </ul>
       </section>    
   
