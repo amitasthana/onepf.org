@@ -1,0 +1,431 @@
+<!--This file is licensed under the Creative Commons Attribution 2.5 license: http://creativecommons.org/licenses/by/2.5/-->
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>
+    <meta charset="utf-8" />
+    <title>Android Appstores -  One Platform Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-onepf.css" rel="stylesheet" media="screen">
+ -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/tablecloth.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet"> 
+    <style>
+      body {padding-top: 60px; }
+      p.answer { padding-bottom: 15px}
+    </style>
+      <!--[if IE]>
+         <style>
+            .rotate_text
+            {
+               writing-mode: tb-rl;
+               filter: flipH() flipV();
+            }
+         </style>
+      <![endif]-->
+      <!--[if !IE]><!-->
+         <style>
+            .rotate-text
+            {
+               -moz-transform:rotate(-90deg); 
+               -moz-transform-origin: top left;
+               -webkit-transform: rotate(-90deg);
+               -webkit-transform-origin: top left;
+               -o-transform: rotate(-90deg);
+               -o-transform-origin: top left;
+               position:relative;
+               top:20px;
+            }
+         </style>
+      <!--<![endif]-->    
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <style>  
+         .vertial-header
+         {
+            height:200px;
+            vertical-align:bottom
+         }
+         .td-index {width: 20px; height: 45px;}
+         .td-name {width: 150px;}
+         .td-cntr {width: 80px;}
+         .td-dp {width: 50px;}
+         .td-dpl {width: 100px;}
+         .td-da {width: 50px;}
+         .td-check {width: 20px;}
+         .td-fee {width: 35px;}
+         .td-dwn {width: 45px;}
+         .td-apps {width: 45px;}
+         .td-dpa {width: 45px;}
+         .td-distribution {width: 350px;}
+         .tablewidth {width: 1095px;}
+         .nobr {white-space:nowrap;}
+      </style>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">One Platform Foundation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/appdf">AppDF</a></li>
+              <li><a href="/openiab">OpenIAB</a></li>
+              <li><a href="/contribute/">How to Contribute</a></li>
+              <li><a href="/follow/">Follow Us</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+              <li><a href="/about/">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1 class="page-header">AppDF - App Description File</h1>
+        <p>
+          Uploading an Android application to several appstores can be time-consuming. The AppDF format is designed to simplify this process. You describe your Android application once, create a simple AppDF file that includes the description, APK file(s), screenshots, app icon, promo images, etc., then and just upload this AppDF file to all the stores that support AppDF uploading.
+        </p>
+        <p style="text-align: right;">
+          <a href="/editor/" class="btn btn-primary btn-primary-onepf">AppDF Editor</a>
+          <a href="https://github.com/onepf/AppDF" class="btn btn-primary btn-primary-onepf">View AppDF on GitHub</a>
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="span12" style="padding:20px 0;">
+        
+
+          
+          <table cellspacing="1" cellpadding="3" class="tablehead tablewidth" style="background:#CCC; table-layout: fixed;">
+          <thead>  
+            <tr>
+              <th title="Index" class="td-index">#</th>
+              <th title="Appstore name" class="td-name nobr">Name / [AppDF ID]</th>
+              <th class="{sorter: false} td-dp nobr"><div class='rotate-text'>Developer portal</div></th>
+              <th title="Developer portal languages" class="td-dpl nobr"><div class='rotate-text'>Developer portal languages</div></th>
+              <th title="Distribution agreement URL" class="td-da nobr"><div class='rotate-text'>Distribution agreement</div></th>
+              <th title="If this appstore has a native client appstore app" class="vertial-header td-check nobr"><div class='rotate-text'>Native client app</div></th>
+              <th title="Does this appstore supports paid apps or free apps only" class="vertial-header td-check nobr"><div class='rotate-text'>Paid content</div></th>
+              <th title="If this appstore has API for in-app purchases" class="vertial-header td-check nobr"><div class='rotate-text'>In-app billing</div></th>
+              <th title="Content premoderation" class="vertial-header td-check nobr"><div class='rotate-text'>Content premoderation</div></th>
+              <th title="Registration fee for developers" class="vertial-header td-fee nobr"><div class='rotate-text'>Registration fee</div></th>
+              <th title="" class="vertial-header td-dwn nobr"><div class='rotate-text'>Downloads</div></th>
+              <th title="" class="vertial-header td-apps nobr"><div class='rotate-text'>Apps</div></th>
+              <th title="" class="vertial-header td-dpa nobr"><div class='rotate-text'>Downloads per app</div></th>
+              <th title="Country where this appstore is mainly available" class="td-cntr nobr">Country</th>
+              <th title="Information about appstore distribution" class="td-distribution nobr">Distribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="oddrow">
+              <td class="td-index">1</td>
+              <td class="td-name"><a href="http://www.amazon.com/mobile-apps/b?node=2350149011">Amazon AppStore</a><br>amazon</td>
+              <td class="td-dp"><a href="https://developer.amazon.com/welcome.html">link</a></td>
+              <td class="td-dpl">en, cn</td>
+              <td class="td-da"><a href="https://developer.amazon.com/help/da.html">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Exclusive appstore on all Kindle tablets (<a href="http://thenextweb.com/gadgets/2012/08/31/amazon-sold-estimated-5-million-kindle-fires-9-months/">22% of U.S. tablet sales in 2012</a>, <a href="http://money.cnn.com/2013/01/31/technology/mobile/android-tablet-market-share/index.html">11.5% of world-wide tablet sales in Q4 2012</a>, <a href="http://arstechnica.com/gadgets/2013/01/kindle-fire-nabs-33-of-android-tablet-market-nexus-7-just-8/">33% of U.S. Android tablet sales</a>)</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">2</td>
+              <td class="td-name"><a href="http://www.androidpit.com">AndroidPIT App Center</a><br>androidpit</td>
+              <td class="td-dp"><a href="http://www.androidpit.com/en/android/developers-info">link</a></td>
+              <td class="td-dpl">en, de, es, ru, pt, fr, tr, it</td>
+              <td class="td-da"><a href="http://www.androidpit.com/terms/developer-agreement/popup">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution"></td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">3</td>
+              <td class="td-name"><a href="http://www.appchina.com/">AppChina</a><br>appchina</td>
+              <td class="td-dp"><a href="http://dev.appchina.com/market/dev/index.action?language=en">link</a></td>
+              <td class="td-dpl">en, cn</td>
+              <td class="td-da"><a href="http://dev.appchina.com/market/dev/agreement.action?language=en">link</a></td>
+              <td class="td-check" align="center"><a href="http://www.appchina.com/app/com.yingyonghui.market/"><i class="icon-ok"></i></a></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">?</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"><a href="http://tech.hexun.com/2012-10-23/147093263.html">600M</a></td>
+              <td class="td-apps">120K</td>
+              <td class="td-dpa">5K</td>
+              <td class="td-cntr">China</td>
+              <td class="td-distribution"></td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">4</td>
+              <td class="td-name"><a href="http://www.applandinc.com/">Appland</a><br>appland</td>
+              <td class="td-dp"><a href="http://www.applandinc.com/products/developers/">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="http://developer.applandinc.com/print/appland/terms">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Mobile operators: Telcos TeliaSoners, 3 (three) and STC (Saudi Telecom)</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">5</td>
+              <td class="td-name"><a href="http://www.appslib.com/">AppsLib</a><br>appslib</td>
+              <td class="td-dp"><a href="http://appslib.com/developers/index.html">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="http://appslib.com/terms_conditions/AppsLib_tnc.htm">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Preinstalled on Android devices of more than 20 different OEMs</td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">6</td>
+              <td class="td-name"><a href="http://www.aptoide.com/">Aptoide</a><br>aptoid</td>
+              <td class="td-dp"><a href="https://www.aptoide.com/account/new-user">link</a></td>
+              <td class="td-dpl">en, pt, es, fr, de, ru, cn, it, ar, kr</td>
+              <td class="td-da">?</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">3.5 million active monthly users</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">7</td>
+              <td class="td-name"><a href="http://www.getjar.com/">GetJar</a><br>getjar</td>
+              <td class="td-dp"><a href="https://developer.getjar.com/">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="http://developer.getjar.com/android/terms/">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Over one billion download of apps, more than 5 million monthly users</td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">8</td>
+              <td class="td-name"><a href="https://play.google.com/store/apps">Google Play</a><br>google</td>
+              <td class="td-dp"><a href="https://play.google.com/apps/publish/">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="https://play.google.com/intl/ALL_us/about/developer-distribution-agreement.html">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-fee">$25</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Preinstalled as the main appstore on majority of Android devices
+<a href="http://officialandroid.blogspot.ru/2012/09/google-play-hits-25-billion-downloads.html">25B (September 2012)</a>
+<a href="http://www.rssphone.com/google-play-store-800000-apps-and-overtake-apple-appstore/">800K (February 2013)</a></td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">9</td>
+              <td class="td-name"><a href="http://app.hiapk.com/">HiAPK</a><br>hiapk</td>
+              <td class="td-dp"><a href="http://dev.apk.hiapk.com/register">link</a></td>
+              <td class="td-dpl">cn</td>
+              <td class="td-da"><a href="http://r.apk.hiapk.com//web2/agreement/%E5%AE%89%E5%8D%93%E7%BD%91%20%E7%BD%91%E7%AB%99%E6%9C%8D%E5%8A%A1%E6%9D%A1%E6%AC%BE.doc">link (cn)</a></td>
+              <td class="td-check" align="center"><a href="http://apk.hiapk.com/mc/d?i=349"><i class="icon-ok"></i></a></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">?</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn">290M/m</td>
+              <td class="td-apps">465K</td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">China</td>
+              <td class="td-distribution">22M+ registered users</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">9</td>
+              <td class="td-name"><a href="http://www.nexva.com/">NexVa</a><br>nexva</td>
+              <td class="td-dp"><a href="http://cp.nexva.com/user/login">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da">?</td>
+              <td class="td-check" align="center">?</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution"></td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">10</td>
+              <td class="td-name"><a href="http://www.barnesandnoble.com/u/NOOK-Apps/379003212/">NOOK Apps</a><br>nook</td>
+              <td class="td-dp"><a href="https://nookdeveloper.barnesandnoble.com/">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da">hidden</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">US</td>
+              <td class="td-distribution">Preinstalled on all NOOK tablets (millions of devices, <a href="http://arstechnica.com/gadgets/2013/01/kindle-fire-nabs-33-of-android-tablet-market-nexus-7-just-8/">10% of U.S. Android tablets</a>)</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">11</td>
+              <td class="td-name"><a href="http://apps.opera.com/">Opera Mobile Store</a><br>opera</td>
+              <td class="td-dp"><a href="http://apps.opera.com/developers.php">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="http://apps.opera.com/docs/DistributionAgreementHandster_standard.pdf">link</a></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">More than 20 million monthly users</td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">12</td>
+              <td class="td-name"><a href="http://www.samsungapps.com/">Samsung Apps</a><br>samsung</td>
+              <td class="td-dp"><a href="http://seller.samsungapps.com/">link</a></td>
+              <td class="td-dpl">en, cn, kr</td>
+              <td class="td-da"><a href="http://seller.samsungapps.com/help/termsAndConditions.as">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Preinstalled on almost all Samsung Android devices</td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">13</td>
+              <td class="td-name"><a href="http://www.slideme.org">SlideME</a><br>slideme</td>
+              <td class="td-dp"><a href="http://www.slideme.org/developers">link</a></td>
+              <td class="td-dpl">en</td>
+              <td class="td-da"><a href="http://www.slideme.org/developer-conditions">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Exclusive appstore on more than 20 million Android devices from different OEMs no info <a href="http://slideme.org/applications?page=2111">21K (April 2013)</a></td>
+            </tr>
+            <tr class="oddrow">
+              <td class="td-index">14</td>
+              <td class="td-name"><a href="http://www.tstore.co.kr/">SK T-Store</a><br>tstore</td>
+              <td class="td-dp"><a href="http://dev.tstore.co.kr/devpoc/main/main.omp">link</a></td>
+              <td class="td-dpl">en, kr</td>
+              <td class="td-da"><a href="http://dev.tstore.co.kr/devpoc/footer/agreement03.omp">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">Korea</td>
+              <td class="td-distribution"><a href="http://www.skplanet.com/Eng/PrRoom/press_view.aspx?seq_num=93">18+ million users, 1B+ downloads</a></td>
+            </tr>
+            <tr class="evenrow">
+              <td class="td-index">15</td>
+              <td class="td-name"><a href="http://store.yandex.com/">Yandex.Store</a><br>yandex</td>
+              <td class="td-dp"><a href="http://developer.yandex.com/">link</a></td>
+              <td class="td-dpl">en, ru</td>
+              <td class="td-da"><a href="https://legal.yandex.com/store_developer_agreement/">link</a></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center"><i class="icon-ok"></i></td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-check" align="center">-</td>
+              <td class="td-fee">free</td>
+              <td class="td-dwn"></td>
+              <td class="td-apps"></td>
+              <td class="td-dpa"></td>
+              <td class="td-cntr">World-wide</td>
+              <td class="td-distribution">Preinstalled by 6 OEMs</td>
+            </tr>
+            </tbody>
+          </table>          
+        </div>
+      </div>
+    </div>
+  
+    <script src="assets/js/jquery-1.7.2.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.metadata.js"></script>
+    <script src="assets/js/jquery.tablesorter.min.js"></script>
+    <script src="assets/js/jquery.tablecloth.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $("table").tablecloth({
+          theme: "stats",
+          striped: true,
+          sortable: true,
+          condensed: true
+        });
+      });
+    </script>
+  </body>
+
+</html>
